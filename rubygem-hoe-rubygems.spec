@@ -4,7 +4,7 @@
 #
 Name     : rubygem-hoe-rubygems
 Version  : 1.0.0
-Release  : 7
+Release  : 8
 URL      : https://rubygems.org/downloads/hoe-rubygems-1.0.0.gem
 Source0  : https://rubygems.org/downloads/hoe-rubygems-1.0.0.gem
 Summary  : No detailed summary available
@@ -54,7 +54,7 @@ fi
 %check
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
-export no_proxy=intel.com,localhost
+export no_proxy=localhost
 pushd %{buildroot}%{gem_dir}/gems/hoe-rubygems-1.0.0
 rake --trace test TESTOPTS="-v"
 popd
@@ -62,18 +62,11 @@ popd
 
 %files
 %defattr(-,root,root,-)
-/usr/lib64/ruby/gems/2.2.0/cache/hoe-rubygems-1.0.0.gem
-/usr/lib64/ruby/gems/2.2.0/doc/hoe-rubygems-1.0.0/ri/Hoe/RubyGems/cdesc-RubyGems.ri
-/usr/lib64/ruby/gems/2.2.0/doc/hoe-rubygems-1.0.0/ri/Hoe/RubyGems/define_rubygems_tasks-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/hoe-rubygems-1.0.0/ri/Hoe/cdesc-Hoe.ri
-/usr/lib64/ruby/gems/2.2.0/doc/hoe-rubygems-1.0.0/ri/cache.ri
-/usr/lib64/ruby/gems/2.2.0/doc/hoe-rubygems-1.0.0/ri/page-CHANGELOG_rdoc.ri
-/usr/lib64/ruby/gems/2.2.0/doc/hoe-rubygems-1.0.0/ri/page-Manifest_txt.ri
-/usr/lib64/ruby/gems/2.2.0/doc/hoe-rubygems-1.0.0/ri/page-README_rdoc.ri
-/usr/lib64/ruby/gems/2.2.0/gems/hoe-rubygems-1.0.0/.autotest
-/usr/lib64/ruby/gems/2.2.0/gems/hoe-rubygems-1.0.0/CHANGELOG.rdoc
-/usr/lib64/ruby/gems/2.2.0/gems/hoe-rubygems-1.0.0/Manifest.txt
-/usr/lib64/ruby/gems/2.2.0/gems/hoe-rubygems-1.0.0/README.rdoc
-/usr/lib64/ruby/gems/2.2.0/gems/hoe-rubygems-1.0.0/Rakefile
-/usr/lib64/ruby/gems/2.2.0/gems/hoe-rubygems-1.0.0/lib/hoe/rubygems.rb
-/usr/lib64/ruby/gems/2.2.0/specifications/hoe-rubygems-1.0.0.gemspec
+/usr/lib64/ruby/gems/2.3.0/cache/hoe-rubygems-1.0.0.gem
+/usr/lib64/ruby/gems/2.3.0/gems/hoe-rubygems-1.0.0/.autotest
+/usr/lib64/ruby/gems/2.3.0/gems/hoe-rubygems-1.0.0/CHANGELOG.rdoc
+/usr/lib64/ruby/gems/2.3.0/gems/hoe-rubygems-1.0.0/Manifest.txt
+/usr/lib64/ruby/gems/2.3.0/gems/hoe-rubygems-1.0.0/README.rdoc
+/usr/lib64/ruby/gems/2.3.0/gems/hoe-rubygems-1.0.0/Rakefile
+/usr/lib64/ruby/gems/2.3.0/gems/hoe-rubygems-1.0.0/lib/hoe/rubygems.rb
+/usr/lib64/ruby/gems/2.3.0/specifications/hoe-rubygems-1.0.0.gemspec
